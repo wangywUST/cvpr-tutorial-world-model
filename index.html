@@ -146,6 +146,10 @@
     .nav-links a:hover::after {
       width: 100%;
     }
+    
+    .nav-divider {
+      display: none;
+    }
 
     .cta-button {
       background: var(--primary);
@@ -211,6 +215,37 @@
       margin: 0 auto;
       position: relative;
       z-index: 1;
+    }
+    
+    .venue-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1.8rem;
+      box-shadow: 0 6px 20px rgba(26, 77, 122, 0.25);
+      letter-spacing: 0.5px;
+    }
+    
+    .venue-name {
+      font-size: 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+    }
+    
+    .venue-separator {
+      opacity: 0.6;
+      font-weight: 400;
+    }
+    
+    .venue-location {
+      font-weight: 500;
+      opacity: 0.95;
     }
 
     .hero h1 {
@@ -753,6 +788,18 @@
       .hero {
         padding: 2.5rem 1.5rem 2rem;
       }
+      
+      .venue-badge {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.4rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+      
+      .venue-name {
+        font-size: 1.1rem;
+      }
 
       .hero-meta {
         flex-direction: column;
@@ -797,8 +844,8 @@
       <div class="logo">
         <div class="logo-mark">VL</div>
         <div class="logo-text">
-          <span class="logo-title">VL Reasoning</span>
-          <span class="logo-subtitle">ICCV 2025</span>
+          <span class="logo-title">Vision-Language Reasoning</span>
+          <span class="logo-subtitle">Tutorial</span>
         </div>
       </div>
       <ul class="nav-links" id="navLinks">
@@ -807,6 +854,7 @@
         <li><a href="#organizers">Organizers</a></li>
         <li><a href="#speakers">Speakers</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li class="nav-divider"></li>
         <li><a href="https://drive.google.com/file/d/1t5j2LousMZtKUeUgO0iARJb4JFFSSj5F/view?usp=sharing" target="_blank" class="cta-button">
           <i class="fas fa-video"></i> Join Zoom
         </a></li>
@@ -822,19 +870,28 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
+      <div class="venue-badge">
+        <span class="venue-name">ICCV 2025</span>
+        <span class="venue-separator">•</span>
+        <span class="venue-location">Honolulu, Hawaii</span>
+      </div>
       <h1>Towards Comprehensive Reasoning in Vision-Language Models</h1>
       <div class="hero-meta">
         <div class="meta-item">
-          <i class="fa fa-tag"></i>
-          <span>ICCV 2025 Tutorial</span>
+          <i class="fa fa-presentation-screen"></i>
+          <span>Tutorial Session</span>
         </div>
         <div class="meta-item">
           <i class="fa fa-calendar-days"></i>
-          <span>October 19, 2025 • 8:30-12:00 (GMT-10)</span>
+          <span>October 19, 2025</span>
+        </div>
+        <div class="meta-item">
+          <i class="fa fa-clock"></i>
+          <span>8:30 AM - 12:00 PM (GMT-10)</span>
         </div>
         <div class="meta-item">
           <i class="fa fa-location-dot"></i>
-          <span>Room 318A, Hawai'i Convention Center</span>
+          <span>Room 318A, Convention Center</span>
         </div>
       </div>
     </div>
