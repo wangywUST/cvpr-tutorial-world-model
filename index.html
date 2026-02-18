@@ -31,10 +31,10 @@
     }
     
     .navbar-brand:hover {
-      color: #3e7b54;
+      color: #2d6cbf;
     }
     
-    /* Fallback ICCV logo using CSS */
+    /* Fallback CVPR logo using CSS */
     .iccv-logo {
       width: 40px;
       height: 40px;
@@ -63,11 +63,11 @@
     }
     
     .nav-link:hover {
-      color: #3e7b54 !important;
+      color: #2d8cff !important;
     }
     
     .navbar-nav .nav-item.active .nav-link {
-      color: #3e7b54 !important;
+      color: #2d8cff !important;
       font-weight: 600;
     }
     
@@ -127,17 +127,17 @@
     }
     
     .section:nth-child(even) {
-      background-color: #f8f9fa;
+      background-color: #f0f4fb;
     }
     
     .section h2 {
-      color: #2c3e50;
+      color: #1a3d6e;
       margin-bottom: 40px;
       font-weight: 300;
     }
     
     .table-striped > tbody > tr:nth-of-type(odd) > td {
-      background-color: rgba(62, 123, 84, 0.05);
+      background-color: rgba(45, 108, 191, 0.05);
     }
     
     .programme .title {
@@ -148,7 +148,7 @@
     }
     
     .speaker-text {
-      color: #000000; /* Changed to pure black */
+      color: #000000;
       font-weight: 500;
       font-size: 1em;
       margin: 0;
@@ -156,14 +156,14 @@
     }
     
     .speaker-text a {
-      color: #000000; /* Changed link color to pure black */
+      color: #000000;
       text-decoration: none;
       transition: color 0.3s ease;
       font-weight: 600;
     }
     
     .speaker-text a:hover {
-      color: #3e7b54;
+      color: #2d6cbf;
       text-decoration: underline;
     }
     
@@ -181,7 +181,7 @@
       padding: 30px;
       background: white;
       border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(39, 174, 96, 0.1);
+      box-shadow: 0 8px 25px rgba(45, 108, 191, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 100%;
       overflow: visible;
@@ -189,7 +189,7 @@
     
     .organizer-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 35px rgba(39, 174, 96, 0.15);
+      box-shadow: 0 12px 35px rgba(45, 108, 191, 0.18);
     }
     
     .organizer-avatar {
@@ -202,7 +202,7 @@
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #3e7b54;
+      border: 4px solid #2d6cbf;
       display: block;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
@@ -261,7 +261,7 @@
     }
     
     .organizer-name {
-      color: #2c3e50;
+      color: #1a3d6e;
       font-weight: 600;
       font-size: 1.3em;
       margin-bottom: 8px;
@@ -269,18 +269,18 @@
     }
     
     .organizer-affiliation {
-      color: #6c757d;
-      font-size: 1.15em; /* Increased from 1em to 1.15em */
+      color: #5a7fa8;
+      font-size: 1.15em;
       margin-bottom: 15px;
       line-height: 1.4;
       text-align: left;
-      font-weight: 500; /* Added font-weight for better readability */
+      font-weight: 500;
     }
     
     .organizer-bio {
       color: #495057;
-      font-size: 1em; /* Increased from 0.9em to 1em */
-      line-height: 1.6; /* Increased from 1.5 to 1.6 for better readability */
+      font-size: 1em;
+      line-height: 1.6;
       margin-bottom: 20px;
       text-align: justify;
       text-justify: inter-word;
@@ -297,18 +297,18 @@
     }
     
     .organizer-links li a {
-      color: #3e7b54;
+      color: #2d6cbf;
       font-size: 1.3em;
       transition: color 0.3s ease, transform 0.3s ease;
       display: inline-block;
     }
     
     .organizer-links li a:hover {
-      color: #4a7c59;
+      color: #3a7acc;
       transform: translateY(-2px);
     }
     
-    /* Speaker styles (same as organizer styles for consistency) */
+    /* Speaker styles */
     .speaker-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -323,7 +323,7 @@
       padding: 30px;
       background: white;
       border-radius: 15px;
-      box-shadow: 0 8px 25px rgba(39, 174, 96, 0.1);
+      box-shadow: 0 8px 25px rgba(45, 108, 191, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 100%;
       overflow: visible;
@@ -331,7 +331,7 @@
     
     .speaker-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 35px rgba(39, 174, 96, 0.15);
+      box-shadow: 0 12px 35px rgba(45, 108, 191, 0.18);
     }
     
     .speaker-avatar {
@@ -344,7 +344,7 @@
       height: 200px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid #3e7b54;
+      border: 4px solid #2d6cbf;
       display: block;
       image-rendering: -webkit-optimize-contrast;
       image-rendering: crisp-edges;
@@ -385,7 +385,7 @@
       z-index: 1;
     }
     
-    /* Speaker institution logos - using local SVG files */
+    /* Speaker institution logos */
     .speaker-item[data-institution="ucla"] .speaker-info::after {
       background-image: url('assets/images/ucla.svg');
     }
@@ -403,7 +403,7 @@
     }
     
     .speaker-name {
-      color: #2c3e50;
+      color: #1a3d6e;
       font-weight: 600;
       font-size: 1.3em;
       margin-bottom: 8px;
@@ -411,7 +411,7 @@
     }
     
     .speaker-affiliation {
-      color: #6c757d;
+      color: #5a7fa8;
       font-size: 1.15em;
       margin-bottom: 15px;
       line-height: 1.4;
@@ -439,19 +439,19 @@
     }
     
     .speaker-links li a {
-      color: #3e7b54;
+      color: #2d6cbf;
       font-size: 1.3em;
       transition: color 0.3s ease, transform 0.3s ease;
       display: inline-block;
     }
     
     .speaker-links li a:hover {
-      color: #4a7c59;
+      color: #3a7acc;
       transform: translateY(-2px);
     }
     
     #footer {
-      background: #2d5a3d;
+      background: #1a3d6e;
       color: white;
       padding: 40px 0;
       text-align: center;
@@ -463,7 +463,7 @@
     }
     
     .table th {
-      background-color: #3e7b54;
+      background-color: #1e5ba8;
       color: white;
       border: none;
       font-weight: 500;
@@ -488,12 +488,12 @@
     .table td.time {
       text-align: left;
       font-weight: 600;
-      color: #2c3e50;
+      color: #1a3d6e;
     }
-    
-/* Updated abstract toggle styles */
+
+    /* Abstract toggle styles */
     .abstract-toggle {
-      color: #3e7b54;
+      color: #2d6cbf;
       text-decoration: underline;
       font-size: 0.9em;
       cursor: pointer;
@@ -502,12 +502,12 @@
     }
     
     .abstract-toggle:hover {
-      color: #4a7c59;
+      color: #3a7acc;
     }
     
     /* Slides link styles */
     .slides-link {
-      color: #3e7b54;
+      color: #2d6cbf;
       text-decoration: underline;
       font-size: 0.9em;
       cursor: pointer;
@@ -516,13 +516,14 @@
     }
     
     .slides-link:hover {
-      color: #4a7c59;
+      color: #3a7acc;
     }
+
     .abstract-content {
-      background-color: #f8f9fa;
+      background-color: #f0f4fb;
       padding: 15px;
       border-radius: 8px;
-      border-left: 4px solid #3e7b54;
+      border-left: 4px solid #2d6cbf;
       font-size: 0.95em;
       line-height: 1.6;
       color: #495057;
@@ -574,11 +575,11 @@
       
       .organizer-affiliation, .speaker-affiliation {
         text-align: center;
-        font-size: 1.1em; /* Adjusted for mobile */
+        font-size: 1.1em;
       }
       
       .organizer-bio, .speaker-bio {
-        font-size: 0.95em; /* Adjusted for mobile, still larger than before */
+        font-size: 0.95em;
         text-align: center;
       }
       
@@ -617,7 +618,7 @@
       }
       
       .navbar-nav .nav-link:hover {
-        background-color: rgba(39, 174, 96, 0.1);
+        background-color: rgba(45, 108, 191, 0.1);
       }
       
       .zoom-button {
@@ -627,7 +628,6 @@
         text-align: center;
       }
       
-      /* Mobile responsive adjustments for background logos */
       .organizer-info::after,
       .speaker-info::after {
         width: 200px;
@@ -654,11 +654,11 @@
       }
       
       .organizer-bio, .speaker-bio {
-        font-size: 0.95em; /* Slightly increased from 0.85em */
+        font-size: 0.95em;
       }
       
       .organizer-affiliation, .speaker-affiliation {
-        font-size: 1.1em; /* Adjusted for medium screens */
+        font-size: 1.1em;
       }
       
       .organizer-info::after,
@@ -709,14 +709,14 @@
       overflow: hidden;
       border-radius: 6px;
       cursor: pointer;
-      background: #f0f0f0;
+      background: #e8eef7;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       height: 250px;
     }
 
     .gallery-item:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(45, 108, 191, 0.25);
     }
 
     .gallery-item img {
@@ -993,7 +993,7 @@
                   <p class="title mb-0">Invited Talk: Grounding Anything in Images and Videos for Comprehensive Reasoning<span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-7" aria-expanded="false" aria-controls="abstract-7">[Abstract]</span><a href="assets/slides/minghsuan.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-7">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> Understanding and reasoning about the visual world requires more than recognizing objects—it demands grounding language, actions, and abstract concepts in images and videos in a unified and interpretable way. This talk explores the emerging paradigm of comprehensive grounding, which bridges perception and reasoning by linking every visual element—objects, attributes, spatial relations, temporal dynamics, and textual cues—to structured representations that large models can reason over. I will present recent advances in grounding visual-language models that can “ground anything,” from static objects in images to dynamic events in videos, enabling consistent interpretation across modalities and tasks. The talk will also discuss how such grounding facilitates high-level reasoning, including question answering, action understanding, and causal inference, moving toward general-purpose vision-language agents that integrate perception, knowledge, and reasoning in a cohesive framework.
+                      <strong>Abstract:</strong> Understanding and reasoning about the visual world requires more than recognizing objects—it demands grounding language, actions, and abstract concepts in images and videos in a unified and interpretable way. This talk explores the emerging paradigm of comprehensive grounding, which bridges perception and reasoning by linking every visual element—objects, attributes, spatial relations, temporal dynamics, and textual cues—to structured representations that large models can reason over. I will present recent advances in grounding visual-language models that can "ground anything," from static objects in images to dynamic events in videos, enabling consistent interpretation across modalities and tasks. The talk will also discuss how such grounding facilitates high-level reasoning, including question answering, action understanding, and causal inference, moving toward general-purpose vision-language agents that integrate perception, knowledge, and reasoning in a cohesive framework.
                     </div>
                   </div>
                 </td>
@@ -1240,7 +1240,7 @@
 
     // Gallery Photo Wall
     (function() {
-      const galleryFolder = 'assets/gallery/'; // 修改为你的照片文件夹路径
+      const galleryFolder = 'assets/gallery/';
       const photoFiles = [
         'photo1.jpg',
         'photo2.jpg',
@@ -1273,7 +1273,6 @@
         'photo29.jpg',
         'photo30.jpg',
         'photo31.jpg',
-        // 添加更多照片文件名
       ];
 
       const galleryGrid = document.getElementById('galleryGrid');
