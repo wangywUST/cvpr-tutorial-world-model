@@ -244,8 +244,10 @@
     }
     
     /* University/Institution logos - using local SVG files */
-    .organizer-item[data-institution="uq"] .organizer-info::after {
-      background-image: url('assets/images/uq.svg');
+    .organizer-item[data-institution="ant-uq"] .organizer-info::after {
+      background-image: url('assets/images/ant.svg'), url('assets/images/uq.svg');
+      background-size: 45% auto, 45% auto;
+      background-position: 20% center, 80% center;
     }
     
     .organizer-item[data-institution="monash"] .organizer-info::after {
@@ -394,8 +396,8 @@
       background-image: url('assets/images/nvidia.svg');
     }
 
-    .speaker-item[data-institution="stealth"] .speaker-info::after {
-      background-image: url('assets/images/zepplinrentals_logo.jfif');
+    .speaker-item[data-institution="rekursive"] .speaker-info::after {
+      background-image: url('assets/images/rekursive.svg');
     }
     
     .speaker-item[data-institution="buffalo"] .speaker-info::after {
@@ -1027,13 +1029,13 @@
       <div class="container">
         <h2>Organizers</h2>
         <div class="organizer-list">
-          <div class="organizer-item" data-institution="uq">
+          <div class="organizer-item" data-institution="ant-uq">
             <div class="organizer-avatar">
               <img src="assets/images/avatars/yujuncai.png" alt="Yujun Cai">
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Yujun Cai</h5>
-              <p class="organizer-affiliation">Staff Research Scientist in Ant Group USA</p>
+              <p class="organizer-affiliation">Staff Research Scientist / Lecturer at Ant Group / University of Queensland</p>
               <p class="organizer-bio">Yujun Cai is a Lecturer in the University of Queensland in Australia and a Staff Research Scientist in Ant Group USA. Before that, she was a Senior Research Scientist in Meta Reality Lab. 
               Her research lies in multi-modal human perception, vision-language models, and natural language processing. She obtained her PhD. degree from Nanyang Technological University in Singapore. </p>
               <ul class="organizer-links">
@@ -1046,11 +1048,11 @@
 
           <div class="organizer-item" data-institution="monash">
             <div class="organizer-avatar">
-              <img src="assets/images/avatars/jianfeicai.jpg" alt="Jun Liu">
+              <img src="assets/images/avatars/jianfeicai.jpg" alt="Jianfei Cai">
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Jianfei Cai</h5>
-              <p class="organizer-affiliation">Professor at Monash University</p>
+              <p class="organizer-affiliation">Full Professor at Monash University</p>
               <p class="organizer-bio">Jianfei Cai is a Professor at Faculty of IT, Monash University, where he had served as the inaugural Head for the Data Science & AI Department. Before that, he was Head of Visual and Interactive Computing Division and Head of Computer Communications Division in Nanyang Technological University (NTU). His major research interests include visual computing, computer vision, and multimedia. He is a co-recipient of paper awards in ACCV, ICCM, IEEE ICIP and MMSP, and a winner of Monash FIT’s Dean's Researcher of the Year Award and Dean's Award for Excellence in Graduate Research Supervision. He serves or has served as an Associate Editor for TPAMI, IJCV, IEEE T-IP, T-MM, and T-CSVT as well as serving as Senior/Area Chair for CVPR, ICCV, ECCV, ACM Multimedia, NeurIPS, ICLR and IJCAI. He was the leading General Chair for ACM Multimedia 2024. He is a distinguished member of ACM and a Fellow of IEEE.</p>
               <ul class="organizer-links">
                 <li><a href="https://jianfei-cai.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
@@ -1082,7 +1084,7 @@
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Ming-Hsuan Yang</h5>
-              <p class="organizer-affiliation">Professor at University of California, Merced</p>
+              <p class="organizer-affiliation">Full Professor at University of California, Merced</p>
               <p class="organizer-bio">Ming-Hsuan Yang is a Professor at University of California, Merced, and a Research Scientist at Google DeepMind. His research has received numerous honors, including Google Faculty Award (2009), NSF CAREER Award (2012), NVIDIA Pioneer Research Awards (2017, 2018), and Sony Faculty Award (2025). He has received Best Paper Honorable Mentions at UIST 2017 and CVPR 2018, Best Student Paper Honorable Mention at ACCV 2018, Longuet-Higgins Prize (Test-of-Time Award) at CVPR 2023, Best Paper Award at ICML 2024, and Test-of-Time Award from WACV 2025. He has been recognized as a Highly Cited Researcher from 2018 to 2025. He currently serves as Associate Editor-in-Chief of IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI) and as an Associate Editor of International Journal of Computer Vision (IJCV) and Transactions on Machine Learning Research (TMLR). He is a Fellow of IEEE, ACM, AAAI, and AAAS.</p>
               <ul class="organizer-links">
                 <li><a href="https://faculty.ucmerced.edu/mhyang/" target="_blank"><i class="fa fa-house"></i></a></li>
@@ -1146,7 +1148,7 @@
             </div>
             <div class="speaker-info">
               <h5 class="speaker-name">Hang Qi</h5>
-              <p class="speaker-affiliation">Staff Research Engineer at Google DeepMind</p>
+              <p class="speaker-affiliation">Staff Research Engineer at Google</p>
               <p class="speaker-bio">Dr. Hang Qi is a Staff Research Engineer at Google DeepMind specializing in computer vision and machine learning. With nearly eight years at Google, he has led and contributed to research and engineering across Google Research and DeepMind, focusing on large-scale vision, multimodal systems, and generative media models. He holds both a Ph.D. and M.S. in Computer Science from UCLA. </p>
               <ul class="speaker-links">
                 <li><a href="https://github.com/hang-qi" target="_blank"><i class="fa fa-house"></i></a></li>
@@ -1156,13 +1158,13 @@
             </div>
           </div>
 
-          <div class="speaker-item" data-institution="stealth">
+          <div class="speaker-item" data-institution="rekursive">
             <div class="speaker-avatar">
               <img src="assets/images/avatars/dankon.png" alt="Dan Kondratyuk">
             </div>
             <div class="speaker-info">
               <h5 class="speaker-name">Dan Kondratyuk</h5>
-              <p class="speaker-affiliation">Co-Founder at rekursiv.ai</p>
+              <p class="speaker-affiliation">Co-Founder at Rekursive AI</p>
               <p class="speaker-bio">Dan Kondratyuk is a Research Scientist specializing in large-scale multimodal generative systems, spanning video, image, audio, and language models. He is the first author of VideoPoet, an LLM for zero-shot video generation that received the ICML 2024 Best Paper Award. Previously at Google, he developed MoViNet for real-time mobile video classification and contributed to large-scale LLM and multimodal training infrastructure. </p>
               <ul class="speaker-links">
                 <li><a href="https://hyperparticle.com/about/" target="_blank"><i class="fa fa-house"></i></a></li>
