@@ -244,8 +244,10 @@
     }
     
     /* University/Institution logos - using local SVG files */
-    .organizer-item[data-institution="uq"] .organizer-info::after {
-      background-image: url('assets/images/uq.svg');
+    .organizer-item[data-institution="ant-uq"] .organizer-info::after {
+      background-image: url('assets/images/ant.svg'), url('assets/images/uq.svg');
+      background-size: 45% auto, 45% auto;
+      background-position: 20% center, 80% center;
     }
     
     .organizer-item[data-institution="monash"] .organizer-info::after {
@@ -389,6 +391,14 @@
     .speaker-item[data-institution="ucla"] .speaker-info::after {
       background-image: url('assets/images/ucla.svg');
     }
+
+    .speaker-item[data-institution="nvidia"] .speaker-info::after {
+      background-image: url('assets/images/nvidia.svg');
+    }
+
+    .speaker-item[data-institution="rekursive"] .speaker-info::after {
+      background-image: url('assets/images/rekursive.svg');
+    }
     
     .speaker-item[data-institution="buffalo"] .speaker-info::after {
       background-image: url('assets/images/ub.svg');
@@ -400,6 +410,10 @@
     
     .speaker-item[data-institution="pku"] .speaker-info::after {
       background-image: url('assets/images/Westlake_University.svg');
+    }
+
+    .speaker-item[data-institution="google-deepmind"] .speaker-info::after {
+      background-image: url('assets/images/google.svg');
     }
     
     .speaker-name {
@@ -852,7 +866,7 @@
           <li class="nav-item"><a class="nav-link" href="#speakers">Invited Speakers</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item">
-            <a class="nav-link zoom-button" href="https://us06web.zoom.us/j/89061545293?pwd=7bKLbCjmgOMk93X7fztOU0kHmvbGzS.1#success" target="_blank">
+            <a class="nav-link zoom-button" href="https://ucmerced.zoom.us/my/ucmnlp" target="_blank">
               <i class="fas fa-video"></i> Join Zoom
             </a>
           </li>
@@ -867,8 +881,8 @@
         <h1>From Perception to Simulation: The Emergence of World Models in Multi-modal Reasoning</h1>
         <h5>CVPR 2026 Tutorial</h5>
         <p>
-          <i class="fa fa-calendar-days"></i> TBD (GMT-7, Denver Time Zone)<br>
-          <i class="fa fa-location-dot"></i> TBD, Denver, Colorado
+          <i class="fa fa-calendar-days"></i> June 3rd, 2026, 2 PM (GMT-7, Denver Time Zone)<br>
+          <i class="fa fa-location-dot"></i> Four Seasons 4 (301/302), Colorado Convention Center, Denver, Colorado
         </p>
       </div>
     </div>
@@ -893,14 +907,14 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <th scope="col" style="width: 10%;">Time</th>
-                <th scope="col" style="width: 75%;">Session</th>
+                <th scope="col" style="width: 14%;">Time</th>
+                <th scope="col" style="width: 71%;">Session</th>
                 <th scope="col" style="width: 15%;">Speaker</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="time">8:30 - 8:35</td>
+                <td class="time">14:00 - 14:10</td>
                 <td class="programme">
                   <p class="title mb-0">Opening Remark: Motivation and Overview <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-1" aria-expanded="false" aria-controls="abstract-1">[Abstract]</span><a href="assets/slides/iccv_tutorial_open_remark_yujun.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-1">
@@ -910,113 +924,100 @@
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://vanoracai.github.io/" target="_blank">TBD</a></p>
+                  <p class="speaker-text"><a href="https://vanoracai.github.io/" target="_blank">Yujun Cai</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">8:35 - 9:10</td>
+                <td class="time">14:10 - 14:40</td>
                 <td class="programme">
-                  <p class="title mb-0">Invited Talk: TBD <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-4" aria-expanded="false" aria-controls="abstract-4">[Abstract]</span><a href="assets/slides/ziweiliu.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: From Chain-of-Thought to Chain-of-State: Why Capable Models Must Predict the World Back <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-4" aria-expanded="false" aria-controls="abstract-4">[Abstract]</span><a href="assets/slides/ziweiliu.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-4">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      <strong>Abstract:</strong> Recent years have witnessed rapid progress in models that generate, predict, and act across increasingly rich environments, from video generators and embodied agents to interactive software agents. These systems are often grouped under the term “world models,” yet defining the term remains elusive, as the term has become overloaded: world models may be explored through the lens of video, 3D, latent dynamics, physics simulations, robotics, etc. This tutorial presents a unified view of world models as state-transition predictors across many kinds of worlds: visual, physical, textual, computational, and social. The tutorial will connect recent work on multimodal visual reasoning, reinforcement world model learning, environment-token prediction for CLI agents, RLVR-trained world models, world-action models, and adversarial reasoning models to argue that the next frontier for increasingly capable models is moving from chain-of-thought to chain-of-state: i.e., from generating plausible intermediate reasoning to maintaining, simulating, and updating the state of the world their actions affect.
                     </div>
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://liuziwei7.github.io/" target="_blank">TBD</a></p>
+                  <p class="speaker-text"><a href="https://dankondratyuk.com/about/" target="_blank">Dan Kondratyuk</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">9:10 - 9:35</td>
+                <td class="time">14:40 - 15:10</td>
                 <td class="programme">
-                  <p class="title mb-0">TBD <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-2" aria-expanded="false" aria-controls="abstract-2">[Abstract]</span><a href="assets/slides/video_tt_challenge.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: Genie 3: Generating interactive photorealistic worlds<span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-2" aria-expanded="false" aria-controls="abstract-2">[Abstract]</span><a href="assets/slides/video_tt_challenge.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-2">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      <strong>Abstract:</strong> Genie 3 is a frontier video generative model for creating photorealistic interactive worlds that users can navigate and interact with in real-time. In this talk, we discuss its capabilities including real-time generation, interactivity, photoreal quality, world consistency, and grounding. We will also discuss its limitations and high-level research problems and applications for video world models.
                     </div>
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://sites.google.com/view/video-tt-challenge" target="_blank">TBD </a></p>
+                  <p class="speaker-text"><a href="https://hangqi.io/" target="_blank">Hang Qi</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">9:35 - 10:10</td>
+                <td class="time">15:10 - 15:50</td>
                 <td class="programme">
-                  <p class="title mb-0">Invited Talk: TBD <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-3" aria-expanded="false" aria-controls="abstract-3">[Abstract]</span><a href="assets/slides/chizhang.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: Towards Physics-Consistent Efficient Visual World Models <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-3" aria-expanded="false" aria-controls="abstract-3">[Abstract]</span><a href="assets/slides/chizhang.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-3">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      <strong>Abstract:</strong> Recent advances in large language models (LLMs) and multimodal large language models (MLLMs) have significantly enhanced the understanding and encoding of textual information. Leveraging these capabilities, a growing number of diffusion-based generative models have emerged for text-conditioned visual generation — spanning text-to-image, text-to-video, and text-to-3D tasks. While these models offer remarkable flexibility and produce increasingly realistic content as world models, they still face fundamental challenges: aligning precisely with user intent, maintaining spatial, view, and temporal consistency, and adhering to the laws of physics. In this talk, I will present several recent research projects from my group that attacks these challenges. For example, VLIPP integrates physics-informed priors to ensure text-to-video generation consistent with physics. UCPE introduces unified camera encoding to facilitate accurate camera controls, which we believe is critical for video generation as world models. 
                     </div>
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://icoz69.github.io/" target="_blank">TBD</a></p>
+                  <p class="speaker-text"><a href="https://jianfei-cai.github.io/" target="_blank">Jianfei Cai</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">10:10 - 10:45</td>
+                <td class="time">15:50 - 16:20</td>
                 <td class="programme">
-                  <p class="title mb-0">Invited Talk: TBD <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-5" aria-expanded="false" aria-controls="abstract-5">[Abstract]</span><a href="assets/slides/kai-wei-chang-math-reasoning.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: VideoPhy: Physical Commonsense Evaluation in Video Generation <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-5" aria-expanded="false" aria-controls="abstract-5">[Abstract]</span><a href="assets/slides/kai-wei-chang-math-reasoning.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-5">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      <strong>Abstract:</strong> Large-scale text-to-video generative models have demonstrated remarkable ability to synthesize realistic videos across diverse visual concepts, positioning them as candidates for general-purpose physical world simulators. However, it remains an open question how faithfully these models adhere to physical commonsense. We present the VideoPhy benchmark series to rigorously evaluate physical commonsense in text-to-video generation. VideoPhy introduces prompts grounded in real-world material interactions (solid-solid, solid-fluid, fluid-fluid), revealing that even the best-performing models at time of publication severely lack the ability to generate videos that adhere to both the given text prompt and physical laws. Building on this, VideoPhy-2 introduces an action-centric evaluation paradigm with 200 diverse real-world actions and fine-grained physical rule analysis, exposing deeper failure modes, particularly around conservation laws such as mass and momentum. Both benchmarks rely on human evaluation to ensure grounded, reliable assessment, and each introduces an automatic evaluator to enable scalable evaluation of newly released models. Together, our benchmarks show that current video generative models fall significantly short of physically plausible world simulation, and highlight key directions for future research.
                     </div>
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://web.cs.ucla.edu/~kwchang/" target="_blank">TBD</a></p>
+                  <p class="speaker-text"><a href="https://web.cs.ucla.edu/~kwchang/" target="_blank">Kai-Wei Chang</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">10:45 - 11:20</td>
+                <td class="time">16:20 - 16:50</td>
                 <td class="programme">
-                  <p class="title mb-0">Invited Talk: TBD <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-6" aria-expanded="false" aria-controls="abstract-6">[Abstract]</span><a href="assets/slides/junsong.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: Cosmos 3: Omni World Foundation Models for Physical AI<span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-6" aria-expanded="false" aria-controls="abstract-6">[Abstract]</span><a href="assets/slides/junsong.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-6">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      <strong>Abstract:</strong> Foundation models are rapidly expanding beyond language and vision toward systems that can understand, simulate, and interact with the physical world. In this talk, I will introduce Cosmos 3, a new family of omni world foundation models for Physical AI that jointly process and generate language, images, video, audio, and action sequences within a unified Mixture-of-Transformers architecture. Cosmos 3 supports highly flexible multimodal input-output configurations, allowing a single model to operate as a vision-language model, video generator, world simulator, and world-action model. I will discuss the architectural design and multimodal training pipeline, as well as the challenges of building scalable world models that unify perception, reasoning, simulation, and action generation.
                     </div>
                   </div>
                 </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://cse.buffalo.edu/~jsyuan/" target="_blank">TBD</a></p>
+                  <p class="speaker-text"><a href="https://mingyuliu.net/" target="_blank">Ming-Yu Liu</a></p>
                 </td>
               </tr>
 
               <tr>
-                <td class="time">11:20 - 11:55</td>
+                <td class="time">16:50 - 17:25</td>
                 <td class="programme">
-                  <p class="title mb-0">Invited Talk: TBD<span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-7" aria-expanded="false" aria-controls="abstract-7">[Abstract]</span><a href="assets/slides/minghsuan.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
+                  <p class="title mb-0">Invited Talk: Toward World Models: Geometry, View Synthesis, and Visual Reasoning<span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-7" aria-expanded="false" aria-controls="abstract-7">[Abstract]</span><a href="slides url" class="slides-link" target="_blank" download>[Slides]</a></p>
                   <div class="collapse mt-2" id="abstract-7">
                     <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
-                    </div>
-                  </div>
-                </td>
-                <td class="speaker">
-                  <p class="speaker-text"><a href="https://faculty.ucmerced.edu/mhyang/" target="_blank">TBD</a></p>
-                </td>
-              </tr>
+                      <strong>Abstract:</strong> Recent advances in dynamic scene reconstruction, view synthesis, and multimodal reasoning are rapidly shaping the development of AI world models. Methods such as DUSt3R show that geometry and motion can now be recovered from casually captured images and videos, while neural rendering and view synthesis enable realistic generation of unseen viewpoints. At the same time, multimodal reasoning models are becoming increasingly capable of understanding object relationships, scene dynamics, and physical interactions.
 
-              <tr>
-                <td class="time">11:55 - 12:00</td>
-                <td class="programme">
-                  <p class="title mb-0">Closing Remark <span class="abstract-toggle" data-bs-toggle="collapse" data-bs-target="#abstract-8" aria-expanded="false" aria-controls="abstract-8">[Abstract]</span><a href="assets/slides/closing-remark.pdf" class="slides-link" target="_blank" download>[Slides]</a></p>
-                  <div class="collapse mt-2" id="abstract-8">
-                    <div class="abstract-content">
-                      <strong>Abstract:</strong> TBD
+                      This talk will discuss how these directions are converging toward unified world models that can reconstruct, generate, and reason about dynamic environments. I will highlight recent progress in dynamic 3D/4D reconstruction, geometry-aware generation, and physically grounded visual reasoning, and discuss their implications for embodied AI, robotics, and interactive visual understanding.
                     </div>
                   </div>
-                </td>                
+                </td>
                 <td class="speaker">
-                  <p class="speaker-text"><a href="https://wangywust.github.io/" target="_blank">TBD</a></p>
-                </td>              
+                  <p class="speaker-text"><a href="https://faculty.ucmerced.edu/mhyang/" target="_blank">Ming-Hsuan Yang</a></p>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -1028,13 +1029,13 @@
       <div class="container">
         <h2>Organizers</h2>
         <div class="organizer-list">
-          <div class="organizer-item" data-institution="uq">
+          <div class="organizer-item" data-institution="ant-uq">
             <div class="organizer-avatar">
               <img src="assets/images/avatars/yujuncai.png" alt="Yujun Cai">
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Yujun Cai</h5>
-              <p class="organizer-affiliation">Staff Research Scientist in Ant Group USA</p>
+              <p class="organizer-affiliation">Staff Research Scientist at Ant Group, Lecturer at University of Queensland</p>
               <p class="organizer-bio">Yujun Cai is a Lecturer in the University of Queensland in Australia and a Staff Research Scientist in Ant Group USA. Before that, she was a Senior Research Scientist in Meta Reality Lab. 
               Her research lies in multi-modal human perception, vision-language models, and natural language processing. She obtained her PhD. degree from Nanyang Technological University in Singapore. </p>
               <ul class="organizer-links">
@@ -1047,12 +1048,12 @@
 
           <div class="organizer-item" data-institution="monash">
             <div class="organizer-avatar">
-              <img src="assets/images/avatars/jianfeicai.jpg" alt="Jun Liu">
+              <img src="assets/images/avatars/jianfeicai.jpg" alt="Jianfei Cai">
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Jianfei Cai</h5>
-              <p class="organizer-affiliation">Professor at Monash University</p>
-              <p class="organizer-bio">Jianfei Cai is a Professor at the Faculty of IT, Monash University, where he was the inaugural Head of the Data Science & AI Department. Before that, he was Head of the Visual and Interactive Computing Division and Head of the Computer Communications Division at Nanyang Technological University (NTU). His major research interests include visual computing, computer vision, and multimedia. He is a co-recipient of paper awards in ACCV, ICCM, IEEE ICIP, and MMSP, and a winner of Monash FIT’s Dean’s Researcher of the Year Award and Dean’s Award for Excellence in Graduate Research Supervision. He is currently on the editorial board of TPAMI and IJCV. He has served as an Associate Editor for IEEE T-IP, T-MM, and T-CSVT, as well as serving as Senior/Area Chair for CVPR, ICCV, ECCV, ACM Multimedia, IJCAI, ICME, ICIP, and ISCAS. He was the Chair of IEEE CAS VSPC-TC during 2016-2018. He also served as the leading TPC Chair for IEEE ICME 2012, the best paper award committee chair/co-chair for IEEE T-MM 2020/2019, and the leading General Chair for ACM Multimedia 2024. He is a Fellow of IEEE.</p>
+              <p class="organizer-affiliation">Full Professor at Monash University</p>
+              <p class="organizer-bio">Jianfei Cai is a Professor at Faculty of IT, Monash University, where he had served as the inaugural Head for the Data Science & AI Department. Before that, he was Head of Visual and Interactive Computing Division and Head of Computer Communications Division in Nanyang Technological University (NTU). His major research interests include visual computing, computer vision, and multimedia. He is a co-recipient of paper awards in ACCV, ICCM, IEEE ICIP and MMSP, and a winner of Monash FIT’s Dean's Researcher of the Year Award and Dean's Award for Excellence in Graduate Research Supervision. He serves or has served as an Associate Editor for TPAMI, IJCV, IEEE T-IP, T-MM, and T-CSVT as well as serving as Senior/Area Chair for CVPR, ICCV, ECCV, ACM Multimedia, NeurIPS, ICLR and IJCAI. He was the leading General Chair for ACM Multimedia 2024. He is a distinguished member of ACM and a Fellow of IEEE.</p>
               <ul class="organizer-links">
                 <li><a href="https://jianfei-cai.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
                 <li><a href="https://scholar.google.com/citations?user=N6czCoUAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
@@ -1083,8 +1084,8 @@
             </div>
             <div class="organizer-info">
               <h5 class="organizer-name">Ming-Hsuan Yang</h5>
-              <p class="organizer-affiliation">Professor at University of California, Merced</p>
-              <p class="organizer-bio">Ming-Hsuan Yang is a Professor in Electrical Engineering and Computer Science at University of California, Merced. He is a Fellow of the IEEE, ACM and AAAI.</p>
+              <p class="organizer-affiliation">Full Professor at University of California, Merced</p>
+              <p class="organizer-bio">Ming-Hsuan Yang is a Professor at University of California, Merced, and a Research Scientist at Google DeepMind. His research has received numerous honors, including Google Faculty Award (2009), NSF CAREER Award (2012), NVIDIA Pioneer Research Awards (2017, 2018), and Sony Faculty Award (2025). He has received Best Paper Honorable Mentions at UIST 2017 and CVPR 2018, Best Student Paper Honorable Mention at ACCV 2018, Longuet-Higgins Prize (Test-of-Time Award) at CVPR 2023, Best Paper Award at ICML 2024, and Test-of-Time Award from WACV 2025. He has been recognized as a Highly Cited Researcher from 2018 to 2025. He currently serves as Associate Editor-in-Chief of IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI) and as an Associate Editor of International Journal of Computer Vision (IJCV) and Transactions on Machine Learning Research (TMLR). He is a Fellow of IEEE, ACM, AAAI, and AAAS.</p>
               <ul class="organizer-links">
                 <li><a href="https://faculty.ucmerced.edu/mhyang/" target="_blank"><i class="fa fa-house"></i></a></li>
                 <li><a href="https://scholar.google.com/citations?hl=en&user=p9-ohHsAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
@@ -1101,14 +1102,22 @@
         <h2>Invited Speakers</h2>
         <div class="speaker-list">
 
-<!--           <div class="speaker-item" data-institution="ucla">
+          <div class="speaker-item" data-institution="ucla">
             <div class="speaker-avatar">
               <img src="assets/images/avatars/kaiweichang.jpg" alt="Kai-Wei Chang">
             </div>
             <div class="speaker-info">
               <h5 class="speaker-name">Kai-Wei Chang</h5>
-              <p class="speaker-affiliation">Associate Professor at University of California, Los Angeles</p>
-              <p class="speaker-bio">Dr. Kai-Wei Chang is an Associate Professor at UCLA specializing in natural language processing, machine learning, and multimodal reasoning. His research particularly focuses on mathematical reasoning, structured prediction, and developing robust AI systems that can handle complex reasoning tasks.</p>
+              <p class="speaker-affiliation">Full Professor at UCLA</p>
+              <p class="speaker-bio">Kai-Wei Chang is a Professor in the Department of Computer
+                Science at the University of California Los Angeles. His research interests include designing
+                trustworthy natural language processing systems and developing
+                multimodal models for vision-language applications. Kai-Wei has
+                published broadly in NLP, AI, and ML. His awards include the Sloan
+                Fellow (2021), AAAI Senior Member (2023), EMNLP Best Long Paper Award
+                (2017), and KDD Best Paper Award (2010). He is elected as an officer of
+                SIGDAT, the organizer running EMNLP.  Additional
+                information is available at http://kwchang.net/</p>
               <ul class="speaker-links">
                 <li><a href="https://web.cs.ucla.edu/~kwchang/" target="_blank"><i class="fa fa-house"></i></a></li>
                 <li><a href="https://scholar.google.com/citations?hl=en&user=fqDBtzYAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
@@ -1117,85 +1126,53 @@
             </div>
           </div>
 
-          <div class="speaker-item" data-institution="buffalo">
+          <div class="speaker-item" data-institution="nvidia">
             <div class="speaker-avatar">
-              <img src="assets/images/avatars/junsongyuan.jpg" alt="TBD">
+              <img src="assets/images/avatars/mingyu.jpg" alt="Ming-Yu Liu">
             </div>
             <div class="speaker-info">
-              <h5 class="speaker-name"></h5>
-              <p class="speaker-affiliation">Professor at University at Buffalo, SUNY</p>
-              <p class="speaker-bio">Dr. Junsong Yuan is a Professor at University at Buffalo, specializing in computer vision, pattern recognition, and multimedia analysis. His research encompasses video understanding, human activity recognition, and multimodal learning with applications in surveillance, healthcare, and autonomous systems.</p>
+              <h5 class="speaker-name">Ming-Yu Liu</h5>
+              <p class="speaker-affiliation">Vice President of Research at NVIDIA</p>
+              <p class="speaker-bio">Dr. Ming-Yu Liu is a Vice President of Research at NVIDIA and an IEEE Fellow. He leads NVIDIA Cosmos Lab, where he advances Generative AI for Physical AI — building world foundation models that allow machines not just to perceive the world, but to simulate, reason about, and interact with it. </p>
               <ul class="speaker-links">
-                <li><a href="https://cse.buffalo.edu/~jsyuan/" target="_blank"><i class="fa fa-house"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?hl=en&user=fJ7seq0AAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a href="https://github.com/jsyuan" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://mingyuliu.net/" target="_blank"><i class="fa fa-house"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=y-f-MZgAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
+                <li><a href="https://mingyuliu.net/" target="_blank"><i class="fab fa-github"></i></a></li>
               </ul>
             </div>
           </div>
 
-          <div class="speaker-item" data-institution="ntu">
+          <div class="speaker-item" data-institution="google-deepmind">
             <div class="speaker-avatar">
-              <img src="assets/images/avatars/ziweiliu.png" alt="">
+              <img src="assets/images/avatars/hangqi.jpg" alt="Hang Qi">
             </div>
             <div class="speaker-info">
-              <h5 class="speaker-name">Ziwei Liu</h5>
-              <p class="speaker-affiliation">Associate Professor at Nanyang Technological University</p>
-              <p class="speaker-bio">Dr. Ziwei Liu is an Assocaite Professor at NTU and leads the LMMs-Lab initiative. His research focuses on large multimodal models, computer vision, and machine learning. He has made significant contributions to visual understanding, generative models, and multimodal intelligence systems.</p>
+              <h5 class="speaker-name">Hang Qi</h5>
+              <p class="speaker-affiliation">Staff Research Engineer at Google</p>
+              <p class="speaker-bio">Dr. Hang Qi is a Staff Research Engineer at Google DeepMind specializing in computer vision and machine learning. With nearly eight years at Google, he has led and contributed to research and engineering across Google Research and DeepMind, focusing on large-scale vision, multimodal systems, and generative media models. He holds both a Ph.D. and M.S. in Computer Science from UCLA. </p>
               <ul class="speaker-links">
-                <li><a href="https://liuziwei7.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?user=lc45xlcAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a href="https://github.com/liuziwei7" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://hangqi.io/" target="_blank"><i class="fa fa-house"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=72jdrSUAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
+                <li><a href="https://github.com/hang-qi" target="_blank"><i class="fab fa-github"></i></a></li>
               </ul>
             </div>
           </div>
 
-          <div class="speaker-item" data-institution="pku">
+          <div class="speaker-item" data-institution="rekursive">
             <div class="speaker-avatar">
-              <img src="assets/images/avatars/chizhang.jpg" alt="">
+              <img src="assets/images/avatars/dankon.png" alt="Dan Kondratyuk">
             </div>
             <div class="speaker-info">
-              <h5 class="speaker-name"></h5>
-              <p class="speaker-affiliation">Assistant Professor at Westlake University</p>
-              <p class="speaker-bio">Dr. Chi Zhang is an Assistant Professor at Westlake University, focusing on multimodal AI and embodied intelligence. His research spans GUI automation, visual reasoning, and human-computer interaction, with particular expertise in developing intelligent agents that can understand and interact with digital interfaces.</p>
+              <h5 class="speaker-name">Dan Kondratyuk</h5>
+              <p class="speaker-affiliation">Co-Founder at rekursiv.ai</p>
+              <p class="speaker-bio">Dan Kondratyuk is a Research Scientist specializing in large-scale multimodal generative systems, spanning video, image, audio, and language models. He is the first author of VideoPoet, an LLM for zero-shot video generation that received the ICML 2024 Best Paper Award. Previously at Google, he developed MoViNet for real-time mobile video classification and contributed to large-scale LLM and multimodal training infrastructure. </p>
               <ul class="speaker-links">
-                <li><a href="https://icoz69.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?hl=zh-CN&user=J4s398EAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a href="https://github.com/icoz69" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://dankondratyuk.com/about/" target="_blank"><i class="fa fa-house"></i></a></li>
+                <li><a href="https://scholar.google.com/citations?user=hl1fJgIAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
+                <li><a href="https://github.com/hyperparticle" target="_blank"><i class="fab fa-github"></i></a></li>
               </ul>
             </div>
           </div>
-
-          <div class="speaker-item" data-institution="ntu">
-            <div class="speaker-avatar">
-              <img src="assets/images/avatars/yuhaodong.jpg" alt="">
-            </div>
-            <div class="speaker-info">
-              <h5 class="speaker-name">TBD</h5>
-              <p class="speaker-affiliation">Ph.D. Student at Nanyang Technological University</p>
-              <p class="speaker-bio">Yuhao Dong currently working on the topic of multimodal learning and his long-term goal is to build general foundation models. Recently he is focusing on vision-language model and unified visual models.</p>
-              <ul class="speaker-links">
-                <li><a href="https://github.com/dongyh20" target="_blank"><i class="fa fa-house"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?user=kMui170AAAAJ&hl=zh-CN" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a href="https://github.com/dongyh20" target="_blank"><i class="fab fa-github"></i></a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="speaker-item" data-institution="ntu">
-            <div class="speaker-avatar">
-              <img src="assets/images/avatars/yuanhanzhang.jpg" alt="Yuanhan Zhang">
-            </div>
-            <div class="speaker-info">
-              <h5 class="speaker-name">Yuanhan Zhang</h5>
-              <p class="speaker-affiliation">Ph.D. Student at Nanyang Technological University</p>
-              <p class="speaker-bio">Yuanhan Zhang's research interests lie in computer vision and deep learning. His work focuses on adapting foundation models—from vision to multimodal—for real-world applications, including benchmarking model performance and adapting models through parameter-efficient tuning, in-context learning, and instruction tuning.</p>
-              <ul class="speaker-links">
-                <li><a href="https://zhangyuanhan-ai.github.io/" target="_blank"><i class="fa fa-house"></i></a></li>
-                <li><a href="https://scholar.google.com/citations?user=g6grFy0AAAAJ&hl" target="_blank"><i class="fas fa-graduation-cap"></i></a></li>
-                <li><a href="https://zhangyuanhan-ai.github.io/" target="_blank"><i class="fab fa-github"></i></a></li>
-              </ul>
-            </div>
-          </div> -->
 
         </div>
       </div>
